@@ -11,7 +11,7 @@ install:
 ifeq ($(PLATFORM), Darwin)
 	@$(MAKE) macos
 else
-	@echo This project is not compatible with the current platform.
+	@echo This project does not target the current platform.
 endif
 
 # Downloads manager
