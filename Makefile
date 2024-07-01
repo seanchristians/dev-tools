@@ -19,8 +19,7 @@ MMD-SERVICE_NAME	= com.seanchristians.macos-manage-downloads
 
 MACOS_TARGETS=\
 	$(BIN_DIR)\
-	$(BIN_DIR)/manage-downloads.sh\
-	$(USER_HOME)/Library/LaunchAgents/$(MMD-SERVICE_NAME).plist
+	$(BIN_DIR)/manage-downloads.sh
 
 macos: $(MACOS_TARGETS)
 	@echo Install complete.
