@@ -113,8 +113,6 @@ trash() {
 	done
 }
 
-install_agent
-
 DOWNLOADS=$(/usr/bin/stat -f '%B %R' "${DOWNLOADS_DIR}/"* | /usr/bin/awk -v threshold="$(/bin/date -jv -1d +%s)" '$1 < threshold {$1="";print}' | /usr/bin/awk '{$1=$1;print}')
 
 IFS=$'\n'
