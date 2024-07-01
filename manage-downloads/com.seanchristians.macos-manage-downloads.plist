@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>AssociatedBundleIdentifiers</key>
+    <array>
+        <string>com.seanchristians.macos-manage-downloads</string>
+    </array>
+    <key>Label</key>
+    <string>com.seanchristians.macos-manage-downloads</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env bash</string>
+        <string>~/.bin/manage-downloads.sh</string>
+    </array>
+	<key>StandardOutPath</key>
+	<string>/var/log/macos-manage-downloads.log</string>
+	<key>StandardErrorPath</key>
+	<string>/var/log/macos-manage-downloads.log</string>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+        </dict>
+    </array>
+</dict>
+</plist>
